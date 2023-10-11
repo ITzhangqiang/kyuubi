@@ -245,7 +245,7 @@ object SparkProcessBuilder {
     "spark.kubernetes.file.upload.path")
 
   final private[spark] val CONF = "--conf"
-  final private[spark] val CLASS = "--class"
+  final private[spark] val CLASS = "--class"cat
   final private[spark] val PROXY_USER = "--proxy-user"
   final private[spark] val SPARK_FILES = "spark.files"
   final private[spark] val PRINCIPAL = "spark.kerberos.principal"

@@ -94,7 +94,7 @@ object Log4j2DivertAppender {
       .find(ap => ap.isInstanceOf[ConsoleAppender] && ap.getLayout.isInstanceOf[StringLayout])
       .map(_.getLayout.asInstanceOf[StringLayout])
       .getOrElse(PatternLayout.newBuilder().withPattern(
-        "%d{yy/MM/dd HH:mm:ss} %p %c{2}: %m%n").build())
+        "%d{yy/MM/dd HH:mm:ss} %p %c{2}: %m%n%ex").build())
   }
 
   def initialize(): Unit = {
